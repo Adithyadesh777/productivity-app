@@ -7,6 +7,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+with app.app_context():
+    import models
+
+    db.create_all()
+
 @app.route("/")
 def home():
     return "Productivity App Backend Running"
