@@ -9,12 +9,25 @@
 
     <h1>Productivity App</h1>
 
+    <!-- TASK INPUT -->
     <div class="task-form">
         <input type="text" id="taskTitle" placeholder="Enter a task">
         <button onclick="createTask()">Add Task</button>
     </div>
 
+    <!-- TASK LIST -->
     <ul id="taskList"></ul>
+
+    <hr>
+
+    <!-- FOCUS TIMER -->
+    <h2>Focus Timer (Anti-Procrastination)</h2>
+
+    <div id="timer">
+        <p id="time">25:00</p>
+        <button onclick="startTimer()">Start Focus</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
